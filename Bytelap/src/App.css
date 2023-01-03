@@ -1,0 +1,105 @@
+ul {
+  list-style: none;
+}
+
+header>ul {
+  display: flex;
+  justify-content: end;
+  margin-right: 2rem;
+}
+
+header>ul>li {
+  margin-left: 15px;
+  margin-right: 15px;
+  font-weight: 600;
+}
+
+main {
+  width: 50%;
+  margin-left: 3rem;
+}
+
+main>input {
+  width: 70%;
+  padding: 0.5rem;
+  border-radius: .5rem;
+}
+
+.filterDrop {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cards {
+  border: 1px solid black;
+  min-height: 200px;
+  margin-bottom: 3rem;
+
+}
+
+.labels {
+  display: none;
+}
+
+h4 {
+  font-weight: 500;
+}
+
+.fa-bars {
+  display: none;
+}
+
+.fa-xmark {
+  display: none;
+}
+
+@media screen and (max-width: 500px) {
+  header {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  header>ul {
+    margin: 2rem;
+  }
+
+  main {
+    width: 100%;
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .filterDrop {
+    margin: 0 1rem;
+  }
+
+  main>input {
+    margin: 0 auto;
+
+  }
+
+  .cards {
+    margin: 2rem;
+    background-color: #F2F2F2;
+  }
+
+  .labels {
+    display: block;
+  }
+
+  .labels:nth-child(1) {
+    text-align: center;
+  }
+
+  .fa-bars {
+    margin: 2rem;
+    display: block;
+  }
+
+  .fa-xmark {
+
+    display: flex;
+  }
+}
