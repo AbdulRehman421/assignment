@@ -1,0 +1,141 @@
+.offerSection {
+    display: flex;
+    flex-direction: column;
+}
+
+.offerSection>h2 {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 3.5rem;
+}
+
+.imgDiv {
+    display: flex;
+
+}
+
+.imgDesc {
+    width: 334px;
+
+}
+
+.imgDiv>div>img {
+    width: 60%;
+    object-fit: cover;
+
+    height: 487px;
+    position: relative;
+    border-radius: 1rem;
+    margin: 0 1rem;
+
+    width: 404px;
+
+
+}
+
+.imgDetails>h3,
+p {
+    padding-left: 1.5rem;
+}
+
+
+
+.imgDetails {
+    position: absolute;
+    bottom: 0px !important;
+    width: 404px;
+    height: 143px;
+    bottom: 120px;
+    background: linear-gradient(180deg, rgba(196, 196, 196, 0) -14.34%, #C4C4C4 116.43%);
+    backdrop-filter: blur(32.5px);
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    margin: 0 1rem;
+}
+
+.imgDetails>h3 {
+    font-size: 20px;
+    color: #00D2FF;
+    text-shadow: 0px 2px 10px rgba(0, 0, 0, 0.25);
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.imgDetails>p {
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+    width: 334px;
+    height: 63px;
+
+}
+
+@media screen and (max-width: 1200px) {
+    .imgDiv {
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .imgDiv>div>img {
+        width: 300px;
+    }
+
+    .imgDetails {
+        width: 300px;
+    }
+
+    .imgDetails>p {
+        width: 250px;
+    }
+}
+
+@media screen and (max-width: 820px) {
+    .imgDiv>div>img {
+        width: 200px;
+    }
+
+    .imgDetails {
+        width: 200px;
+        height: 200px;
+    }
+
+    .imgDetails>p {
+        width: 150px;
+
+    }
+
+
+
+}
+
+@media screen and (max-width: 500px) {
+    .imgDiv {
+        flex-direction: column;
+
+    }
+
+    .imgDiv>div>img {
+        /* width: 3000p000x; */
+        width: 93%;
+    }
+
+    .imgDetails {
+        display: none;
+    }
+
+    .offerImage {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .imgDetails {
+        width: 200px;
+        height: 200px;
+    }
+
+    .imgDetails>p {
+        width: 150px;
+
+    }
+
+}

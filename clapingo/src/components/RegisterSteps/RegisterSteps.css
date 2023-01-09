@@ -1,0 +1,91 @@
+.stepsSection {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.stepsSection>h3 {
+    color: #001F27;
+    font-weight: 600;
+    font-size: 40px;
+    /* width: 100%; */
+    text-align: left;
+    margin-left: 10rem;
+
+
+}
+
+.plansNsteps {
+    display: flex;
+    width: 80%;
+    justify-content: space-around;
+    /* text-align: left; */
+
+}
+
+/* .steps {
+    margin-right: 12rem;
+} */
+.plansImg {
+    display: flex;
+    justify-content: center;
+    margin: 0 10rem;
+    position: relative;
+}
+
+
+.plansShadow {
+    position: absolute;
+    width: 268px;
+    height: 175px;
+    bottom: 0px;
+    background: linear-gradient(180deg, rgba(251, 251, 253, 0) -50%, #FBFBFD 74.21%);
+    filter: blur(10px);
+
+}
+
+.step>h4 {
+    color: #001F27;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.step>p {
+    color: #808F93;
+}
+
+.step {
+    background: #FFFFFF;
+    box-shadow: 26px 26px 23px rgba(204, 210, 212, 0.36);
+    border-radius: 12px;
+    width: 379px;
+    height: 175px;
+    margin-bottom: 5rem;
+
+}
+
+@media screen and (max-width: 1300px) {
+    .step {
+        width: 350px;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    .stepsSection>h3 {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 820px) {
+    .plansNsteps {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .plansImg {
+        order: 3;
+    }
+
+}

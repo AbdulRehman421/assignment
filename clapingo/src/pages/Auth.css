@@ -1,0 +1,30 @@
+.authSection {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+form>label,
+input {
+    display: block;
+    padding: 0.5rem;
+    width: 250px;
+    border-radius: 1rem;
+}
+
+
+form>a>button {
+
+    padding: 10px 24px;
+    background: linear-gradient(360deg, #52A49A -65.93%, #00CDAC 100%);
+    border-radius: 80px;
+    width: 280px;
+    height: 48px;
+    border: none;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #FFFFFF;
+    margin-top: 1rem;
+}

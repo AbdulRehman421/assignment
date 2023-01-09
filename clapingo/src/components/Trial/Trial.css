@@ -1,0 +1,164 @@
+section {
+    position: relative;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.gradientBox {
+    position: absolute;
+    width: 530px;
+    height: 358px;
+
+    background: linear-gradient(90deg, #00D2FF -13.02%, rgba(0, 210, 255, 0) 103.77%);
+}
+
+.mileStoneCollection {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+.mileStones1 {
+    display: flex;
+    margin-bottom: 10px;
+    margin-left: 160px;
+
+}
+
+.mileStones2 {
+    display: flex;
+    margin-top: 10px;
+    margin-left: 190px;
+
+}
+
+.mileStone {
+    width: 205px;
+    /* height: 96px; */
+    background: #3A3636;
+    border-radius: 12px;
+    margin-left: 30px;
+    text-align: center;
+    color: #FFFFFF;
+    z-index: 1;
+
+
+}
+
+.mileStone>h2 {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 0;
+
+}
+
+.mileStone>h2>span {
+    color: #18C0A6;
+}
+
+.mileStone>p {
+    font-size: 14px;
+}
+
+.trailBox {
+    width: 50%;
+    margin-left: 8rem;
+}
+
+.trailBox>h6 {
+    font-weight: 500;
+    font-size: 16px;
+    color: #139980;
+    line-height: none;
+    margin: 0 0;
+}
+
+.trailBox>h3 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 45px;
+    margin: 0 0;
+
+}
+
+.trailBox>p {
+    font-weight: 400;
+    font-size: 16px;
+
+}
+
+.trailBox>button {
+    padding: 15px 24px;
+    gap: 10px;
+    background: #FF736A;
+    border-radius: 80px;
+    border: none;
+    width: 137px;
+    height: 48px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #FFFFFF;
+    margin-top: 30px;
+
+}
+
+@media screen and (max-width: 1200px) {
+    .trailBox>h3 {
+        font-size: 30px;
+    }
+
+    .trailBox {
+        width: 100%;
+        margin-left: 4rem;
+    }
+
+    .mileStoneCollection {
+        /* width: 60%; */
+    }
+
+    section {
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 820px) {
+    .gradientBox {
+        width: 100%;
+        top: 140px;
+    }
+
+    .trailBox {
+        margin-top: 7rem;
+        margin-left: 0;
+        text-align: center;
+        justify-content: space-around;
+    }
+
+    .mileStones1 {
+        margin: 2rem 0;
+    }
+
+    .mileStones2 {
+        margin: 0;
+    }
+
+
+}
+
+@media screen and (max-width: 500px) {
+    section {
+        min-height: auto;
+    }
+
+    .gradientBox {
+        width: 100%;
+        top: 0px;
+    }
+
+    p {
+        padding: 5px !important;
+    }
+}
